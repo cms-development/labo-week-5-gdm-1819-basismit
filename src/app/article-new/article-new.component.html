@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                  <label>Title:
+                      <input [(ngModel)]="article.title" placeholder="title">
+                  </label>
+                  <label>Body:</label>
+                  <textarea [(ngModel)]="article.body" cols="30" rows="10"></textarea>
+                  <img *ngIf="previewSrc" [src]="previewSrc" alt="preview">
+                  <input type="file" (change)="onNewImage($event)">
+                  <a  class="waves-effect waves-light btn-small" (click)="upload()">upload</a>
+              </div>
+              <div class="card-action">
+                  <a class="waves-effect waves-light btn-small" (click)="goBack()">go back</a>
+                  <a [ngClass]="{'btn-small disabled': !activeButton, 'waves-effect waves-light btn-small': activeButton}"(click)="post()">Save</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,4 @@
+<div class="collection">
+    <a *ngFor="let article of articles" routerLink="/articles/{{article.attributes.uuid}}" class="collection-item">{{article.attributes.title}}</a>
+
+</div>

@@ -1,0 +1,14 @@
+.card-image img{
+  height: 400px;
+  object-fit: cover;
+}
+.card-action a {
+  margin-right: 10px;
+}
+
+textarea {
+  height: 300px;
+}
+label {
+  font-size: 1.5em;
+}

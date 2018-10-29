@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'article-manager';
+  title = 'Article Manager';
+  loggedOut = localStorage.getItem('access_token');
 }
